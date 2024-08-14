@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>CS2个人cfg分享</title>
+      <link href="/posts/40a777a0.html"/>
+      <url>/posts/40a777a0.html</url>
+      
+        <content type="html"><![CDATA[<p>#空格大跳</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">alias +DJUMP &quot;+jump; +duck&quot; </span><br><span class="line">alias -DJUMP &quot;-JUMP; -DUCK&quot;  </span><br><span class="line">bind space &quot;+DJUMP&quot;    </span><br></pre></td></tr></table></figure><p>#按住mouse5灵魂出窍 （tp可以穿过墙体才可以使用）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">setinfo hide_dist 0.5</span><br><span class="line">bind kp_minus &quot;hideToggle&quot;</span><br><span class="line">alias &quot;hideToggle&quot;   &quot;hideOn&quot;</span><br><span class="line">alias &quot;hideOn&quot;       &quot;setinfo hide_dist 9999; alias hideToggle hideMed&quot;  </span><br><span class="line">alias &quot;hideMed&quot;      &quot;setinfo hide_dist 1.5; alias hideToggle hideOff&quot; </span><br><span class="line">alias &quot;hideOff&quot;      &quot;setinfo hide_dist -1; alias hideToggle hideOn&quot; </span><br><span class="line">c_mindistance -999999</span><br><span class="line">c_maxdistance 999999</span><br><span class="line">cam_collision 0</span><br><span class="line">bind &quot;mouse5&quot; &quot;+allowzoom&quot;</span><br><span class="line">alias &quot;zoomin&quot; &quot;incrementvar cam_idealdist -999999 999999 -100&quot;</span><br><span class="line">alias &quot;zoomout&quot; &quot;incrementvar cam_idealdist -999999 999999 100&quot;</span><br><span class="line">alias &quot;+allowzoom&quot; &quot;bind mwheeldown zoomout; bind mwheelup zoomin; cam_idealdist 0; thirdperson&quot;</span><br><span class="line">alias &quot;-allowzoom&quot; &quot;bind mwheeldown +jump; bind mwheelup lastinv; cam_idealdist 200; firstperson&quot;   </span><br></pre></td></tr></table></figure><p>#屏蔽特效</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//一键屏蔽特效</span><br><span class="line">bind &quot;KP_6&quot; &quot;toggle r_csgo_depth_prepass 0 1&quot;</span><br><span class="line"></span><br><span class="line">//屏蔽地图瞎眼滤镜</span><br><span class="line">bind &quot;KP_7&quot; &quot;toggle r_csgo_postprocess_enable 0 1&quot;</span><br><span class="line"></span><br><span class="line">//屏蔽预渲染贴图</span><br><span class="line">bind &quot;KP_8&quot; &quot;toggle r_csgo_depth_prepass 0 1&quot;</span><br></pre></td></tr></table></figure><p>#按mouse4循环购买scar和negav（废弃）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alias toggle_say &quot;say_scar&quot;</span><br><span class="line">alias say_scar &quot;say !scar; alias toggle_say say_negev&quot;</span><br><span class="line">alias say_negev &quot;say !negev; alias toggle_say say_scar&quot;</span><br><span class="line">bind &quot;mouse4&quot; &quot;toggle_say&quot;</span><br><span class="line">mouse4 买mp9和negev</span><br></pre></td></tr></table></figure><p>#按mouse3进入无后座模式 搭配跟随准星效果更佳<br>###此时滚轮向前可以缩放 滚轮向下可以跳跃 ，再按mouse3或者灵魂出窍绑键可以恢复</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">alias toggle_allowzoom &quot;allowzoom_on&quot;</span><br><span class="line">alias allowzoom_on &quot;bind mwheeldown +jump; bind mwheelup zoomin; cam_idealdist 0; thirdperson; alias toggle_allowzoom allowzoom_off&quot;</span><br><span class="line">//alias allowzoom_on &quot;bind mwheeldown +jump; bind mwheelup lastinv; cam_idealdist 0; thirdperson; alias toggle_allowzoom allowzoom_off&quot;</span><br><span class="line">alias allowzoom_off &quot;bind mwheeldown +jump; bind mwheelup +jump; cam_idealdist 200; firstperson; alias toggle_allowzoom allowzoom_on&quot;</span><br><span class="line">bind &quot;mouse3&quot; &quot;toggle_allowzoom&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> CS2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> CS2 </tag>
+            
+            <tag> CFG </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你好，这是我的简历</title>
       <link href="/posts/10c9e967.html"/>
       <url>/posts/10c9e967.html</url>
@@ -11,19 +38,18 @@
         <content type="html"><![CDATA[]]></content>
       
       
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>CS2ZE个人cfg</title>
-      <link href="/posts/cc2c2a24.html"/>
-      <url>/posts/cc2c2a24.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
+      <categories>
+          
+          <category> 简历 </category>
+          
+      </categories>
       
       
+        <tags>
+            
+            <tag> 简历 </tag>
+            
+        </tags>
       
     </entry>
     
