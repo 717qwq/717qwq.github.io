@@ -12,12 +12,24 @@
       
       
       
+        <tags>
+            
+            <tag> C# </tag>
+            
+            <tag> await </tag>
+            
+            <tag> async </tag>
+            
+            <tag> 异步 </tag>
+            
+        </tags>
+      
     </entry>
     
     
     
     <entry>
-      <title>CS2个人cfg分享</title>
+      <title>CS2 个人cfg分享</title>
       <link href="/posts/40a777a0.html"/>
       <url>/posts/40a777a0.html</url>
       
@@ -36,6 +48,33 @@
             <tag> CS2 </tag>
             
             <tag> CFG </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WPF还原-Material-Design</title>
+      <link href="/posts/40f777a0.html"/>
+      <url>/posts/40f777a0.html</url>
+      
+        <content type="html"><![CDATA[<p>还原过程很恶心，包括但不限于<br>控件不兼容框架<br>版本差点没法回滚<br>Livechart不再维护<br><a href="https://sm.ms/image/xo5p7bJHSmM6LPt" target="_blank"><img src="https://s2.loli.net/2024/08/20/xo5p7bJHSmM6LPt.png" ></a><br><a href="https://github.com/717qwq/717qwq-Learning-code/tree/main/C%23/WPF%20Design">https://github.com/717qwq/717qwq-Learning-code/tree/main/C%23/WPF Design</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> C# </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C# </tag>
+            
+            <tag> WPF </tag>
             
         </tags>
       
